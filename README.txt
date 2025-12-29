@@ -1,1 +1,1 @@
-collaborative workflow with github
+colloborative workflow with github
