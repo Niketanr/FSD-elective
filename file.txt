@@ -1,1 +1,1 @@
-Handling merging conflicts with branch X by user1
+Handling merging conflicts in branch Y by user2
