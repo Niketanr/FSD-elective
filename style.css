@@ -1,0 +1,74 @@
+/* Custom Theme Colors: Dark and Warning (Yellow/Orange) usually look good for energetic/animal vibe,
+   we override some minimal CSS as requested */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; /* for smooth scrolling to sections */
+}
+
+/* Navbar Hover Effects */
+.nav-hover-effect {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-hover-effect::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffc107; /* Bootstrap warning color */
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.nav-hover-effect:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffc107;
+}
+
+.nav-hover-effect:hover {
+    color: #ffc107 !important;
+}
+
+/* Footer Social Icon Zoom */
+.hover-zoom {
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.2);
+    color: #ffc107 !important;
+}
+
+/* Hero Section adjustments */
+.hero-slogan {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #333;
+}
+
+/* Service Cards */
+.service-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-desc-box {
+    display: none; /* Initially hidden, managed by JS */
+    background: #f8f9fa;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+}

@@ -1,0 +1,276 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Home Section (Slogan + Carousel) -->
+<section id="home" class="py-5 bg-light">
+    <div class="container mt-5 pt-4">
+        <div class="row align-items-center">
+            <!-- Left Side: Slogan -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h1 class="hero-slogan mb-4">Your Pet's Health is Our Passion <br><span class="text-warning">in Fern Hill</span></h1>
+                <p class="lead text-muted">Providing world-class care and love for your furry, feathered, and scaly family members since 1990.</p>
+                <a href="#appointment" class="btn btn-warning btn-lg px-4 mt-3 rounded-pill fw-bold">Book an Appointment</a>
+            </div>
+            <!-- Right Side: Carousel -->
+            <div class="col-lg-6">
+                <div id="petCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <!-- Placeholder for Dog Image using Unsplash source -->
+                            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Dog" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <!-- Placeholder for Cat Image -->
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Cat" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <!-- Placeholder for Parrot/Bird Image -->
+                            <img src="https://images.unsplash.com/photo-1588336142586-36aff13141f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Parrot" style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="py-5">
+    <div class="container text-center pt-5">
+        <h2 class="mb-4 fw-bold">About Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p class="fs-5 text-muted">
+                    At Fern Hill Animal Hospital, we believe that treating your pets with exceptional medical care shouldn't come at the cost of compassion. Our state-of-the-art facility is equipped with advanced diagnostic tools, ensuring that we bring accurate and quick solutions to complex health problems. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container pt-5">
+        <h2 class="text-center mb-5 fw-bold">Our Services</h2>
+        <div class="row g-4">
+            
+            <!-- Cancer Care -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm service-card" data-target="#descCancer">
+                    <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cancer Care" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Cancer Care</h5>
+                        <p class="text-muted small">Click to learn more</p>
+                    </div>
+                </div>
+                <div id="descCancer" class="service-desc-box mt-3 shadow-sm">
+                    <p class="mb-0"><strong>What it is:</strong> Comprehensive oncology services to diagnose and treat various cancers in pets. <br>
+                    <strong>Causes:</strong> Genetic predisposition, environmental factors, aging, and certain infections. <br>
+                    <strong>Symptoms:</strong> Abnormal lumps, non-healing sores, weight loss, lethargy, difficulty breathing or eating.<br>
+                    <strong>Our Approach:</strong> We offer chemotherapy, surgical removal, and palliative care tailored to improve your pet's quality of life.</p>
+                </div>
+            </div>
+
+            <!-- Ophthalmology -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm service-card" data-target="#descOptho">
+                    <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Ophthalmology" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Ophthalmology</h5>
+                        <p class="text-muted small">Click to learn more</p>
+                    </div>
+                </div>
+                <div id="descOptho" class="service-desc-box mt-3 shadow-sm">
+                    <p class="mb-0"><strong>What it is:</strong> Diagnosis and treatment of eye diseases to prevent blindness and ensure comfort. <br>
+                    <strong>Causes:</strong> Infections, trauma, genetics, diabetes, or age-related cataracts. <br>
+                    <strong>Symptoms:</strong> Squinting, redness, excess tearing, cloudiness in the eye, pawing at the face.<br>
+                    <strong>Our Approach:</strong> We provide detailed eye exams, glaucoma screening, and cataract management.</p>
+                </div>
+            </div>
+
+            <!-- Nutrition -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm service-card" data-target="#descNutrition">
+                    <img src="https://images.unsplash.com/photo-1585559700398-1385b3a8aeb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Nutrition" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Nutrition</h5>
+                        <p class="text-muted small">Click to learn more</p>
+                    </div>
+                </div>
+                <div id="descNutrition" class="service-desc-box mt-3 shadow-sm">
+                    <p class="mb-0"><strong>What it is:</strong> Diet planning and management to treat underlying diseases or maintain optimal health. <br>
+                    <strong>Causes:</strong> Poor diet choices, allergies, kidney/liver disease, or simple obesity. <br>
+                    <strong>Symptoms:</strong> Rapid weight gain/loss, dull coat, lethargy, digestive issues (vomiting/diarrhea).<br>
+                    <strong>Our Approach:</strong> Prescription diets, allergy trials, and personalized nutritional plans for every life stage.</p>
+                </div>
+            </div>
+
+            <!-- Cardiology -->
+            <div class="col-md-4 offset-md-2 mt-4">
+                <div class="card h-100 border-0 shadow-sm service-card" data-target="#descCardio">
+                    <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cardiology" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Cardiology</h5>
+                        <p class="text-muted small">Click to learn more</p>
+                    </div>
+                </div>
+                <div id="descCardio" class="service-desc-box mt-3 shadow-sm">
+                    <p class="mb-0"><strong>What it is:</strong> Specialized care for heart and cardiovascular conditions in animals. <br>
+                    <strong>Causes:</strong> Congenital defects, aging, breed predispositions, heartworm disease. <br>
+                    <strong>Symptoms:</strong> Coughing, fainting, exercise intolerance, rapid breathing, pale gums.<br>
+                    <strong>Our Approach:</strong> Echocardiograms, EKGs, blood pressure monitoring, and tailored medical management.</p>
+                </div>
+            </div>
+
+            <!-- Neurology -->
+            <div class="col-md-4 mt-4">
+                <div class="card h-100 border-0 shadow-sm service-card" data-target="#descNeuro">
+                    <img src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Neurology" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Neurology</h5>
+                        <p class="text-muted small">Click to learn more</p>
+                    </div>
+                </div>
+                <div id="descNeuro" class="service-desc-box mt-3 shadow-sm">
+                    <p class="mb-0"><strong>What it is:</strong> Diagnosis and treatment of disorders affecting the brain, spinal cord, and nerves. <br>
+                    <strong>Causes:</strong> Slipped discs (IVDD), tumors, infections, epilepsy, or trauma. <br>
+                    <strong>Symptoms:</strong> Seizures, paralysis, uncoordinated walking, head tilt, severe spinal pain.<br>
+                    <strong>Our Approach:</strong> Neurological exams, medical seizure management, and referrals for advanced imaging (MRI).</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Specialists Section -->
+<section class="py-5">
+    <div class="container pt-5">
+        <h2 class="text-center mb-5 fw-bold">Our Specialists</h2>
+        <div class="row g-4 text-center">
+            
+            <!-- Specialist 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="mb-3">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Dr. Sarah" class="rounded-circle shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                </div>
+                <h5 class="fw-bold">Dr. Sarah Jenkins</h5>
+                <p class="text-warning mb-1 fw-medium">Lead Veterinarian & Surgeon</p>
+                <p class="text-muted small">15+ Years Experience</p>
+            </div>
+
+            <!-- Specialist 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="mb-3">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Dr. Michael" class="rounded-circle shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                </div>
+                <h5 class="fw-bold">Dr. Michael Chen</h5>
+                <p class="text-warning mb-1 fw-medium">Veterinary Cardiologist</p>
+                <p class="text-muted small">10+ Years Experience</p>
+            </div>
+
+            <!-- Specialist 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="mb-3">
+                    <img src="https://images.unsplash.com/photo-1594824432258-f7b531121d5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Dr. Emily" class="rounded-circle shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                </div>
+                <h5 class="fw-bold">Dr. Emily Roberts</h5>
+                <p class="text-warning mb-1 fw-medium">Veterinary Oncologist</p>
+                <p class="text-muted small">12+ Years Experience</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Appointment Section -->
+<section id="appointment" class="py-5 bg-light mb-0 pb-5">
+    <div class="container pt-5">
+        <h2 class="text-center mb-4 fw-bold">Book an Appointment</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 shadow p-5 bg-white rounded">
+                <form id="appointmentForm">
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="petType" class="form-label">Pet Type <span class="text-danger">*</span></label>
+                            <select class="form-select" id="petType" required>
+                                <option value="" disabled selected>Select Pet Type</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Cat">Cat</option>
+                                <option value="Parrot">Parrot</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <label for="petName" class="form-label">Pet Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="petName" required placeholder="Enter pet's name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="ownerName" class="form-label">Owner Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="ownerName" required placeholder="Your full name">
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" required placeholder="10-digit number">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" required placeholder="name@example.com">
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <label for="city" class="form-label">City <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="city" required placeholder="Your city of residence">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="date" class="form-label">Preferred Date <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <label for="branch" class="form-label">Branch <span class="text-danger">*</span></label>
+                            <select class="form-select" id="branch" required>
+                                <option value="" disabled selected>Select Branch</option>
+                                <option value="Fern Hill Main">Fern Hill Main</option>
+                                <option value="Fern Hill East">Fern Hill East</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message / Reason for Visit</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Briefly describe what you need help with..."></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button type="reset" class="btn btn-secondary px-4">Reset</button>
+                        <button type="submit" class="btn btn-warning fw-bold px-4">Submit Appointment</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section is effectively handled by Footer/Locations, but we can add a tiny anchor for smooth scroll -->
+<span id="contact"></span>
+
+{% endblock %}
